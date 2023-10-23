@@ -1,0 +1,70 @@
+<resources>
+
+    //calcular sueldo por horas
+
+    <string name="app_name">Prueba Final</string>
+    <string name="pesotexto">Ingrese Peso(kg)</string>
+    <string name="peso">Peso(KG)</string>
+    <string name="estaturatext">Ingrese su estatura(CM)</string>
+    <string name="estatura">Estatura(CM)</string>
+    <string name="resultado">Resultado:</string>
+    <string name="calcularimc">CALCULAR</string>
+    <string name="lunesaviernes">Horas Lunes A Viernes</string>
+    <string name="horaslav">Horas Lunes a viernes</string>
+    <string name="sabado">Horas Sabados</string>
+    <string name="horassab">Horas Sabados</string>
+    <string name="domingofer">Horas Domingos/Feriados</string>
+    <string name="horasdomfer">Horas Domingo/Feriados</string>
+    <string name="calcularsueldo">Calcular</string>
+    <string name="frenar">Parar</string>
+    <string name="total">Total:</string>
+
+    //reproductor
+
+    <string name="SoundPool">Audio con SoundPool</string>
+    <string name="MediaPlayer">Audio con MediaPlayer</string>
+
+    //webview
+
+    <string name="urlEditText">Ingresa el sitio web</string>
+    <string name="loadButton">Ir al sitio</string>
+    <string name="BotonCerrar">Cerrar</string>
+
+    //calculadora_spinner
+
+    <string name="num1_texto">Ingrese Primer Numero</string>
+    <string name="num2_texto">Ingrese Segundo Numero</string>
+    <string name="num1">Ingrese numero</string>
+    <string name="num2">Ingrese numero</string>
+    <string name="spinner"></string>
+    <string name="calcular_spinner">Calcular</string>
+    <string name="resultado_calculadora_spinner">Resultado:</string>
+
+    //tienda
+
+    <string name="papas">Papas</string>
+    <string name="frutillas">Frutillas</string>
+    <string name="tomates">Tomates</string>
+    <string name="duraznos">Duraznos</string>
+    <string name="papaskg">KG</string>
+    <string name="frutillaskg">KG</string>
+    <string name="tomateskg">KG</string>
+    <string name="duraznoskg">KG</string>
+    <string name="calcular_tienda">Total</string>
+    <string name="total_tienda">Total: </string>
+    <string name="totalpapas">Total papas:</string>
+    <string name="totalfruti">Total frutillas:</string>
+    <string name="totaltoma">Total tomates:</string>
+    <string name="totaldura">Total duraznos:</string>
+
+    //reproductor video
+    <string name="siguiente">Siguiente</string>
+    <string name="anterior">Anterior</string>
+
+    //menu
+    <string name="item1">Linkedin</string>
+
+    <string name="item2">Instagram</string>
+
+    <string name="item3">Pagina WEB</string>
+</resources>

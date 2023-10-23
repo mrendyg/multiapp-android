@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/pantalla_principal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6A000000">
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/papas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/papas"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/frutillas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/frutillas"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/papas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/papas"
+        app:layout_constraintTop_toBottomOf="@+id/papas" />
+
+    <CheckBox
+        android:id="@+id/tomates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/tomates"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/frutillas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frutillas"
+        app:layout_constraintTop_toBottomOf="@+id/frutillas" />
+
+    <CheckBox
+        android:id="@+id/duraznos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/duraznos"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tomates"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tomates"
+        app:layout_constraintTop_toBottomOf="@+id/tomates" />
+
+    <EditText
+        android:id="@+id/papaskg"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/papas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toEndOf="@+id/papas"
+        app:layout_constraintTop_toTopOf="@+id/papas"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/frutillaskg"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/frutillas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/papaskg"
+        app:layout_constraintTop_toBottomOf="@+id/papaskg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/tomateskg"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tomates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frutillaskg"
+        app:layout_constraintTop_toBottomOf="@+id/frutillaskg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/duraznoskg"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/duraznos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tomateskg"
+        app:layout_constraintTop_toBottomOf="@+id/tomateskg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/calcular_tienda"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="totales_tienda"
+        android:background="@drawable/boton_estilo"
+        android:text="@string/calcular_tienda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duraznos"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/totalpapas"
+        android:layout_width="111dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/totalpapas"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duraznos" />
+
+    <TextView
+        android:id="@+id/totalfruti"
+        android:layout_width="111dp"
+        android:layout_height="98dp"
+        android:text="@string/totalfruti"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toEndOf="@+id/totalpapas"
+        app:layout_constraintTop_toTopOf="@+id/totalpapas" />
+
+    <TextView
+        android:id="@+id/totaltoma"
+        android:layout_width="111dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/totaltoma"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalpapas" />
+
+    <TextView
+        android:id="@+id/totaldura"
+        android:layout_width="111dp"
+        android:layout_height="98dp"
+        android:text="@string/totaldura"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toEndOf="@+id/totaltoma"
+        app:layout_constraintTop_toTopOf="@+id/totaltoma"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/total_tienda"
+        android:layout_width="118dp"
+        android:layout_height="195dp"
+        android:text="@string/total_tienda"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="48dp"
+        android:layout_height="47dp"
+        android:background="@drawable/atras"
+        android:backgroundTint="@color/white"
+        android:onClick="atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

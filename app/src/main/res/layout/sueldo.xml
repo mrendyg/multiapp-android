@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/pantalla_principal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6A000000">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lunesaviernes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="@string/lunesaviernes"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/horassab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/horassab"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sabado"
+        app:layout_constraintTop_toBottomOf="@+id/sabado" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="205dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/total"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/calcular"
+        app:layout_constraintTop_toBottomOf="@+id/calcular"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/domingofer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/domingofer"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/horassab"
+        app:layout_constraintTop_toBottomOf="@+id/horassab" />
+
+    <EditText
+        android:id="@+id/horaslav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/horaslav"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lunesaviernes"
+        app:layout_constraintTop_toBottomOf="@+id/lunesaviernes" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/boton_estilo"
+        android:fontFamily="sans-serif"
+        android:onClick="calcularTotal"
+        android:text="@string/calcularsueldo"
+        android:textColor="#ffffff"
+        android:textFontWeight="800"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/horasdomfer"
+        app:layout_constraintTop_toBottomOf="@+id/horasdomfer" />
+
+    <EditText
+        android:id="@+id/horasdomfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/horasdomfer"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/domingofer"
+        app:layout_constraintTop_toBottomOf="@+id/domingofer" />
+
+    <TextView
+        android:id="@+id/sabado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/sabado"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/horaslav"
+        app:layout_constraintTop_toBottomOf="@+id/horaslav" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="169dp"
+        android:layout_height="218dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/total"
+        app:layout_constraintTop_toBottomOf="@+id/horasdomfer"
+        app:layout_constraintVertical_bias="0.816">
+
+        <ImageView
+            android:id="@+id/excelente"
+            android:layout_width="match_parent"
+            android:layout_height="201dp"
+            android:src="@drawable/excelente"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/medio"
+            android:layout_width="match_parent"
+            android:layout_height="201dp"
+            android:src="@drawable/medio"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/malo"
+            android:layout_width="match_parent"
+            android:layout_height="201dp"
+            android:src="@drawable/malo"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/parar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:onClick="parar"
+        android:text="@string/frenar"
+        android:textColor="#ffffff"
+        android:textFontWeight="800"
+        android:visibility="invisible"
+        android:background="@drawable/boton_estilo"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toEndOf="@+id/sabado"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="48dp"
+        android:layout_height="47dp"
+        android:background="@drawable/atras"
+        android:backgroundTint="@color/white"
+        android:onClick="atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
